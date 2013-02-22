@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+    <!-- HEAD -->
+    <head>
+        <title><?php echo "$title"; ?></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" type="text/css" href="theme/theme.css" /> 
+        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+
+
+    <!-- BODY -->
+    <body>
+
+
+        <!-- Titles -->
+        <div class="title">
+        <h1>jMEF</h1>
+        <h2>A Java library to create, process and manage mixtures of exponential families</h2>
+        <a href="https://github.com/vincentfpgarcia/jMEF">View on <img src="images/git copy.png" alt="Git"/> github</a>
+        </div>
+
+
+        <div class="main">
+
+        <!-- Menu -->
+        <div class="menu">
+
+            <h1>Download</h1>
+            <a href="https://github.com/vincentfpgarcia/jMEF/zipball/master" class="aDownload">Sources .ZIP</a>
+            <a href="https://github.com/vincentfpgarcia/jMEF/tarball/master" class="aDownload">Sources .TAR.GZ</a>
+            <a href="resources/jMEF.Flyer.pdf" class="aPDF">Presentation .PDF</a>
+
+            <h1>Pages</h1>
+            <a href="index.php">- jMEF</a>
+            <a href="tutorials.php">- Tutorials</a>
+            <a href="doc/index.html">- Documentation</a>
+            <a href="https://raw.github.com/vincentfpgarcia/jMEF/master/LICENSE.md">- Licence</a>
+
+            <h1>See also</h1>
+            <a href="matlab,php">- jMEF for Matlab</a>
+            <a href="http://www.lix.polytechnique.fr/~schwander/pyMEF/">- pyMEF</a>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
