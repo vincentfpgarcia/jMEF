@@ -439,13 +439,15 @@ public class BregmanHardClustering {
 		for (int i=0; i<n; i++){
 			double min = Double.MAX_VALUE;
 			for (int j=0; j<m; j++){
+				double tmp = 0;
 				if (type==CLUSTERING_TYPE.RIGHT_SIDED)
-					min = f.EF.BD(f.param[i], g.param[j]);
+					tmp = f.EF.BD(f.param[i], g.param[j]);
 				else if (type==CLUSTERING_TYPE.LEFT_SIDED)
-					min = f.EF.BD(g.param[j], f.param[i]);
+					tmp = f.EF.BD(g.param[j], f.param[i]);
 				else if (type==CLUSTERING_TYPE.SYMMETRIC){
-					min = 0.5 * ( f.EF.BD(f.param[i], g.param[j]) + f.EF.BD(g.param[j], f.param[i]) );
+					tmp = 0.5 * ( f.EF.BD(f.param[i], g.param[j]) + f.EF.BD(g.param[j], f.param[i]) );
 				}
+				min = Math.min(min, tmp);
 			}
 			value += min;
 		}
