@@ -188,7 +188,7 @@ public class PMatrix extends Parameter{
 					}
 			if (big == 0.0) {
 				// NOT INVERTIBLE!!!
-				// Frank: Raise exception
+				throw new RuntimeException("MEF|Matrix is singular!");
 			}
 			i = ik[k];
 			if (i>k)
